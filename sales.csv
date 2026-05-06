@@ -1,0 +1,13 @@
+Product,Category,Sales,Region,Month
+Laptop,Electronics,1200,North,January
+Phone,Electronics,800,South,January
+Shirt,Clothing,150,East,February
+Shoes,Clothing,200,West,February
+TV,Electronics,1500,North,March
+Pants,Clothing,100,South,March
+Tablet,Electronics,600,East,April
+Jacket,Clothing,300,West,April
+Headphones,Electronics,400,North,May
+Dress,Clothing,250,South,May
+Monitor,Electronics,900,East,June
+Boots,Clothing,350,West,June
