@@ -1,0 +1,10 @@
+streamlit
+pandas
+plotly
+groq
+langchain
+langchain-community
+langchain-groq
+langchain-experimental
+sqlalchemy
+tabulate
