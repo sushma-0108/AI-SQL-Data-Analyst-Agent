@@ -17,20 +17,20 @@ st.markdown("Upload a CSV file and ask questions in plain English!")
 
 # ─── Sidebar ───────────────────────────────────────────
 # Works both locally and on Streamlit Cloud
-    api_key = st.secrets.get("GROQ_API_KEY", "") or st.text_input(
-        "Groq API Key",
-        type="password",
-        placeholder="gsk_..."
-    )
-    model_choice = st.selectbox(
-        "Choose Model",
-        ["llama-3.3-70b-versatile", "llama3-8b-8192"]
-    )
-    st.markdown("---")
-    st.markdown("**How to use:**")
-    st.markdown("1. Enter Groq API key")
-    st.markdown("2. Upload CSV file")
-    st.markdown("3. Ask any question!")
+api_key = st.secrets.get("GROQ_API_KEY", "") or st.text_input(
+    "Groq API Key",
+    type="password",
+    placeholder="gsk_..."
+)
+model_choice = st.selectbox(
+    "Choose Model",
+    ["llama-3.3-70b-versatile", "llama3-8b-8192"]
+)
+st.markdown("---")
+st.markdown("**How to use:**")
+st.markdown("1. Enter Groq API key")
+st.markdown("2. Upload CSV file")
+st.markdown("3. Ask any question!")
 
 # ─── Load CSV into SQLite ──────────────────────────────
 def load_csv_to_sqlite(df, db_path="data.db", table_name="data_table"):
