@@ -16,13 +16,12 @@ st.title("🤖 AI SQL Data Analyst Agent")
 st.markdown("Upload a CSV file and ask questions in plain English!")
 
 # ─── Sidebar ───────────────────────────────────────────
-with st.sidebar:
-    st.header("⚙️ Configuration")
-    api_key = st.text_input(
-        "Groq API Key",
-        type="password",
-        placeholder="gsk_..."
-    )
+# Works both locally and on Streamlit Cloud
+api_key = st.secrets.get("GROQ_API_KEY", "") or st.text_input(
+    "Groq API Key",
+    type="password",
+    placeholder="gsk_..."
+)
     model_choice = st.selectbox(
         "Choose Model",
         ["llama-3.3-70b-versatile", "llama3-8b-8192"]
